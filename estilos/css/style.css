@@ -3,6 +3,13 @@
     padding:0;
     box-sizing: border-box;
 }
+:root{
+    --font-title:f;
+    --font-paragraphs:"Roboto Condensed", sans-serif;
+}
+p{
+    font-family: var(--font-paragraphs);
+}
 .menu-header{
     background-color: green;
     /* */
@@ -42,13 +49,19 @@
     margin-inline:5rem;
 }
 .product-cards{
-    max-width:15vw;
+    max-width:25vw;
     display:flex;
     flex-direction: column;
+    gap:.5em;
     border: green 2px solid;
     margin-inline:2rem;
     padding:2rem;
 
+}
+.cards-buttons{
+    display: flex;
+    flex-direction: column;
+    
 }
 .card-descripcion{
     white-space: nowrap;
